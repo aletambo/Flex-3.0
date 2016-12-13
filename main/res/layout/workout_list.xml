@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/workout_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gymtyme.flex30.WorkoutListActivity">
+
+    <TextView
+        android:id="@+id/workout_list_title"
+        android:text="@string/workout_list_title"
+        android:textAllCaps="true"
+        android:textSize="32sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop = "5dp"
+        android:background="#e60000"
+        android:textColor="#ffffff"
+        android:padding="15dp"
+        android:gravity="center"/>
+    <ListView
+        android:id="@android:id/list"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/workout_list_title"
+        android:layout_above="@+id/back_button"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@id/android:empty"
+        android:text = "@string/no_tasks"
+        android:gravity="center"
+        android:layout_below="@+id/workout_list_title"
+        android:layout_above="@+id/back_button"
+        />
+
+    <Button
+        android:id="@+id/start_workout_button"
+        android:text="@string/start_workout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#e60000"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/back_button"
+        android:text="@string/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#e60000"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/workout_list_title" />
+
+    <Button
+        android:id="@+id/work_remove_button"
+        android:text="@string/remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#e60000"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gymtyme.flex30.AddWorkoutActivity">
+
+    <TextView
+        android:id="@+id/workout_name_text"
+        android:textAllCaps="true"
+        android:textSize="32sp"
+        android:text="@string/workout_name_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop = "5dp"
+        android:background="#e60000"
+        android:textColor="#ffffff"
+        android:padding="15dp"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/workout_name"
+        android:hint="@string/name_of_workout_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:hint="@string/rest_btw_ex"
+        android:id="@+id/time_between"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/create_workout_button"
+        android:text="@string/create_workout_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop = "5dp"
+        android:background="#e60000"
+        android:textColor="#ffffff"/>
+    <Button
+        android:id="@+id/cancel_create_workout_button"
+        android:text="@string/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop = "5dp"
+        android:background="#e60000"
+        android:textColor="#ffffff"/>
+
+
+
+</LinearLayout>

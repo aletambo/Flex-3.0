@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_timer_btw_ex"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gymtyme.flex30.timer.TimerBtwEx">
+
+    <TextView
+        android:text="@string/time_until_next_ex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop = "5dp"
+        android:background="#e60000"
+        android:textColor="#ffffff"
+        android:padding="15dp"
+        android:gravity="center"
+        android:id="@+id/textView"
+        android:textSize="32sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:id="@+id/timer"
+        android:textSize="80sp" />
+
+    <Button
+        android:text="@android:string/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop = "5dp"
+        android:background="#e60000"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/cancel"
+        android:onClick="cancelWorkout" />
+
+    <Button
+        android:text="Pause"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop = "5dp"
+        android:background="#e60000"
+        android:textColor="#ffffff"
+        android:layout_above="@+id/cancel"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/pause" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pause"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="111dp"
+        android:id="@+id/numberSets"
+        android:textSize="40sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/numberSets"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:id="@+id/repNumber"
+        android:textSize="40sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/numberSets"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/exerciseNext"
+        android:textSize="40sp" />
+</RelativeLayout>
